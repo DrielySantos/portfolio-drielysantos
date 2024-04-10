@@ -1,0 +1,59 @@
+@media(max-width: 1280px){
+    .cabecalho{
+        padding: 1.9rem;
+    }
+    
+    .home{
+        flex-direction: column;
+        align-items: center;
+        margin: 3.1rem 0;
+        gap: 30px;
+    }
+
+    .home .informacoes{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .projetos .container__projetos{
+        padding: 0 1.9rem;
+    }
+}
+
+@media (min-width: 768px){}
+
+@media(max-width: 425px){
+    .home .informacoes h1{
+        font-size: 1.8rem;
+    }
+
+    .home .informacoes p{
+        font-size: 1rem;
+    }
+
+    .home .container__foto img{
+        max-width: 20rem;
+    }
+
+    .info-sobre{
+        height: 100vh;
+    }
+
+    /* .formacoes__cursos{
+        background-color: red;
+        flex-direction: column;
+    }
+
+    .formacoes__cursos__list .formacoes__cursos__item__img{
+        width: 100%;
+        height: 5rem;
+        background-color: #ffffff;
+        border-radius: .4rem;
+        padding: 1.5rem;
+    }
+     */
+    .projetos{
+        padding: 1.9rem;
+    }
+}
