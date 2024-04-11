@@ -1,5 +1,5 @@
 html{
-    color: #fff;
+    color: var(--branco);
     scroll-behavior: smooth;
 }
 
@@ -7,7 +7,7 @@ body{
     font-family: "Ubuntu", sans-serif;
     margin: 0 auto;
     max-width: 1120px;
-    background: linear-gradient(150deg, #000000, #9e00ff);
+    background: linear-gradient(150deg, var(--preto), var(--roxo-body));
     background-size: 120% 120%;
 }
 
@@ -22,17 +22,16 @@ body{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid var(--branco);
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
     transition: 0.2s;
-    /* font-family: "Ubuntu", sans-serif; */
 }
 
 .cabecalho a:hover .logo{
-    color: #9443d8;
-    border: 2px solid #9443d8;
+    color: var(--roxo-claro);
+    border: 2px solid var(--roxo-claro);
 }
 
 .cabecalho .menu ul{
@@ -48,10 +47,11 @@ body{
 }
 
 .cabecalho .menu li a:hover{
-    background-color: #9443d8;
-    color: #fff;
+    background-color: var(--roxo-claro);
+    color: var(--branco);
     border-radius: 50px;
 }
+
 
 .home{
     display: flex;
@@ -88,7 +88,7 @@ body{
 }
 
 .home .redes-sociais a i{
-    border: 1px solid #fff;
+    border: 1px solid var(--branco);
     border-radius: 50%;
     width: 3.5rem;
     height: 3.5rem;
@@ -99,8 +99,8 @@ body{
 }
 
 .home .redes-sociais a i:hover{
-    color: #9443d8;
-    border: 1px solid #9443d8;
+    color: var(--roxo-claro);
+    border: 1px solid var(--roxo-claro);
     transform: scale(1.1);
 }
 
@@ -114,15 +114,16 @@ body{
 }
 
 .home .foto.sombra-interna{
-    background: linear-gradient(to right, #8A35C8, #18C063, #00EEA2);
+    background: linear-gradient(to right, var(--linear-gradient-roxo), var(--linear-gradient-verde-escuro), var(--linear-gradient-verde-claro));
     background-size: 180% 180%;
     animation: gradient-animation 4s ease infinite;
 }
 
 .info-sobre{
     display: flex;
+    padding: 4.4rem 0 4.4rem;;
     width: 100%;
-    height: 78vh;
+    min-height: 80vh;
 }
 
 .info-sobre .container__info-sobre{
@@ -146,7 +147,7 @@ body{
 .skills .skills__tecnologias{
     display: flex;
     padding: 2rem 0;
-    gap: 3.5rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -158,15 +159,15 @@ body{
 }
 
 .skills__tecnologias .fa-html5 {
-    color: #e19a37;
+    color: var(--html5);
 }
 
 .skills__tecnologias .fa-css3-alt{
-    color: #6d98ee;
+    color: var(--css);
 }
 
 .skills__tecnologias .fa-js{
-    color: #FFD43B;
+    color: var(--js);
 }
 
 .skills .skills__tecnologias p{
@@ -183,7 +184,7 @@ body{
     flex-wrap: wrap;
     padding: 2rem 3rem;
     gap: 15px;
-    height: 10rem;
+    height: 20rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -194,13 +195,13 @@ body{
     flex-grow: 1;
     padding: 2rem 0;
     cursor: pointer;
-    background-color: #fffffff9;
-    color: #040203;
+    background-color: var(--branco);
+    color: var(--preto);
     transition: 0.3s;
 }
 
 .hobbies .hobbies__lista li:hover{
-    color: #9443d8;
+    color: var(--roxo-claro);
 }
 
 .hobbies .hobbies__lista li i{
@@ -213,34 +214,33 @@ body{
     margin-top: .9rem;
 }
 
-
 .hobbies__lista .fa-headphones{
-    color: #d336b1;
+    color: var(--headphones);
 } 
 
 .hobbies__lista .fa-tv{
-    color: #0d0d0d;
+    color: var(--preto-fosco);
 } 
 
 .hobbies__lista .fa-gamepad{
-    color: #dd0c0c;
+    color: var(--gamepad);
 } 
 
 .hobbies__lista .fa-dumbbell{
-    color: #3d5785;
+    color: var(--dumbbell);
 }
 
 .hobbies__lista .fa-house{
-    color: #0a80b3;
+    color: var(--house);
 }
 
 .hobbies .hobbies__lista p{
-    font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.2;
     text-align: center;
 }
+
 
 .formacoes__titulo{
     text-align: center;
@@ -261,10 +261,6 @@ body{
     flex-wrap: wrap;
 }
 
-.formacoes__cursos__list li{
-    flex-shrink: 1;
-}
-
 .formacoes .container__formacoes-box{
     width: 22%;
     height: 20%;
@@ -273,52 +269,26 @@ body{
 .formacoes__cursos__list .formacoes__cursos__item__img{
     width: 100%;
     height: 10rem;
-    background-color: #ffffff;
+    background-color: var(--branco);
     border-radius: .4rem;
     padding: 1.5rem;
 }
 
 .formacoes__cursos__list .formacoes__cursos__item__titulo{
     padding: .5rem;
-    color: #ffffffe2;
+    color: var(--branco);
     font-weight: 400;
     font-size: 1rem;
 }
 
 .formacoes__cursos__list .formacoes__cursos__item__subtitulo{
-    color: #ffffffe2;
+    color: var(--branco);
     padding: 0 .5rem;
 }
 
 .formacoes__cursos__list .formacoes__cursos__item__subtitulo span{
-    color: #00EEA2;
+    color: var(--accent);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .projetos{
     padding: 4.4rem 0 4.4rem;
@@ -356,7 +326,7 @@ body{
 }
 
 .projetos .projeto h3{
-    background-color: #040203;
+    background-color: var(--preto-fosco);
     width: 100%;
     padding: .8rem 0 .8rem 1.2rem;
     position: absolute;
@@ -364,7 +334,7 @@ body{
 }
 
 .projetos .projeto .informacoes__projeto{
-    background-color: #040203;
+    background-color: var(--preto-fosco);
     position: absolute;
     top: 0;
     width: 100%;
@@ -377,7 +347,7 @@ body{
 
 .projetos .container__projetos .projeto:hover .informacoes__projeto{
     opacity: 0.8;
-    background-color: #000;
+    background-color: var(--preto);
 }
 
 .projetos .btn-mostrar-projetos{
@@ -388,16 +358,16 @@ body{
     width: 11.3rem;
     padding: 1.3rem;
     background: none;
-    border: 1px solid #fff;
+    border: 1px solid var(--branco);
     border-radius: 15px;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--branco);
     cursor: pointer;
 }
 
 .projetos .btn-mostrar-projetos:hover{
-    background-color: #9443d8;
+    background-color: var(--roxo-claro);
     transition: 0.3s;
 }
 

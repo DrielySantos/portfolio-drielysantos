@@ -21,7 +21,15 @@
     }
 }
 
-@media (min-width: 768px){}
+@media (max-width: 650px){
+    .hobbies .hobbies__lista{
+        height: 25rem;
+    }
+
+    .formacoes .formacoes__cursos .container__formacoes-box{
+        width: 55%;
+    }
+}
 
 @media(max-width: 425px){
     .home .informacoes h1{
@@ -37,22 +45,22 @@
     }
 
     .info-sobre{
-        height: 100vh;
+        min-height: 100%;
     }
 
-    /* .formacoes__cursos{
-        background-color: red;
+    .hobbies .hobbies__lista{
+        height: 25rem;
+    }
+
+    .formacoes .formacoes__cursos{
         flex-direction: column;
+        align-items: center;
     }
 
-    .formacoes__cursos__list .formacoes__cursos__item__img{
-        width: 100%;
-        height: 5rem;
-        background-color: #ffffff;
-        border-radius: .4rem;
-        padding: 1.5rem;
+    .formacoes .formacoes__cursos .container__formacoes-box{
+        width: 55%;
     }
-     */
+
     .projetos{
         padding: 1.9rem;
     }
