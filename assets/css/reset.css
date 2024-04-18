@@ -11,7 +11,7 @@ a{
     color: #fff;
 }
 
-ul{
+ul, li{
     list-style: none;
 }
 

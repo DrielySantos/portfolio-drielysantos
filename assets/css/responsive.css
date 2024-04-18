@@ -21,6 +21,17 @@
     }
 }
 
+@media(min-width: 1024px){
+    .cabecalho .menu{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho .menu__sobre-mim{
+        display: none;
+    }
+}
+
 @media (max-width: 650px){
     .hobbies .hobbies__lista{
         height: 25rem;

@@ -49,6 +49,15 @@
     transform: scale(1.1);
 }
 
+.home .pdf_download a i{
+   width: 10rem;
+   height: 3.5rem;
+   font-size: .8rem;
+   border-radius: 8px;
+   padding: 1.2rem 0;
+   justify-content: center;
+}
+
 .home .container__foto .foto{
     max-width: 28.2rem;
     border-radius: 50%;
